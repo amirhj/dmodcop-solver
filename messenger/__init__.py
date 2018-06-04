@@ -4,3 +4,4 @@ from AbstractMessageLogger import AbstractMessageLogger
 from AbstractLogConsumer import AbstractLogConsumer
 from AbstractLogger import AbstractLogger
 from AbstractExecuter import AbstractExecuter
+from AbstractInitiator import AbstractInitiator
