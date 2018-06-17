@@ -1,19 +1,18 @@
 from abc import ABCMeta, abstractmethod
 
-class AbstractMessenger:
+class AbstractMessenger(object):
 	__metaclass__ = ABCMeta
 
 	def __init__(self):
 		self.receiver = None
-		super().__init__()
 
 	@abstractmethod
-	def send(self, agents, command):
-		pass
+	def send(self, agents, content):
+		raise NotImplementedError()
 
 	@abstractmethod
 	def initReceiver(self):
-		pass
+		raise NotImplementedError()
 
 	def setReceiver(self, receiver):
 		self.receiver = receiver
